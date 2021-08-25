@@ -2,20 +2,20 @@ version: '3'
 services:
   desktop_server1:
     container_name: desktop_server1
-    build: .
+    build: ./desktop1
     command: tail -F anything
   
   desktop_server2:
     container_name: desktop_server2
-    build: .
+    build: ./desktop2
     command: tail -F anything
   
   mobile_server1:
     container_name: mobile_server1
-    build: .
+    build: ./mobile1
     command: tail -F anything
 
   mobile_server2:
     container_name: mobile_server2
-    build: .
+    build: ./mobile2
     command: tail -F anything
