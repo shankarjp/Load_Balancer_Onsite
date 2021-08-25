@@ -1,0 +1,21 @@
+version: '3'
+services:
+  desktop_server1:
+    container_name: desktop_server1
+    build: .
+    command: tail -F anything
+  
+  desktop_server2:
+    container_name: desktop_server2
+    build: .
+    command: tail -F anything
+  
+  mobile_server1:
+    container_name: mobile_server1
+    build: .
+    command: tail -F anything
+
+  mobile_server2:
+    container_name: mobile_server2
+    build: .
+    command: tail -F anything
